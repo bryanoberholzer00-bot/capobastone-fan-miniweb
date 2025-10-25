@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capobastone Fan - Mini Web App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .section {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #fff;
+            padding-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px 5px;
+            font-weight: bold;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .rok-tools {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .tool-card {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline-item {
+            position: relative;
+            padding: 20px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 25px;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255,255,255,0.8);
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: rgba(255,255,255,0.3);
+        }
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Capobastone Fan Site 🎮</h1>
+            <p class="subtitle">Il Punto di Riferimento per i Fan di Capobastone</p>
+        </header>
+
+        <!-- Rise of Kingdom Tools -->
+        <section class="section">
+            <h2>⚔️ Rise of Kingdom - Tool Utili</h2>
+            <div class="rok-tools">
+                <div class="tool-card">
+                    <h3>📊 Calcolatore Potenza</h3>
+                    <p>Calcola la potenza delle tue truppe</p>
+                    <a href="https://rok.guide/power-calculator/" target="_blank" class="btn">Apri Tool</a>
+                </div>
+                <div class="tool-card">
+                    <h3>🗺️ Guida Comandanti</h3>
+                    <p>Migliori build per comandanti</p>
+                    <a href="https://rok.guide/commanders/" target="_blank" class="btn">Vedi Guida</a>
+                </div>
+                <div class="tool-card">
+                    <h3>⏰ Event Calendar</h3>
+                    <p>Calendario eventi del gioco</p>
+                    <a href="https://rok.guide/events/" target="_blank" class="btn">Calendario</a>
+                </div>
+                <div class="tool-card">
+                    <h3>💎 Gem Calculator</h3>
+                    <p>Ottimizza l'uso delle gemme</p>
+                    <a href="https://everythingrok.com/" target="_blank" class="btn">Calcola</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Streamlabs Section -->
+        <section class="section">
+            <h2>💰 Supporta Capobastone</h2>
+            <p style="margin-bottom: 20px;">Vuoi supportare Capobastone durante le sue live? Usa Streamlabs per inviare donazioni e messaggi!</p>
+            <div style="text-align: center;">
+                <a href="https://streamlabs.com/thecapobastonechannel" target="_blank" class="btn">💸 Dona su Streamlabs</a>
+            </div>
+        </section>
+
+        <!-- Amazon Wishlist -->
+        <section class="section">
+            <h2>🎁 Wishlist Amazon</h2>
+            <p style="margin-bottom: 20px;">Vuoi fare un regalo a Capobastone? Dai un'occhiata alla sua wishlist Amazon!</p>
+            <div style="text-align: center;">
+                <a href="https://www.amazon.it/hz/wishlist/ls/1LY9YRHEXB1RP?ref_=wl_share" target="_blank" class="btn">🛒 Vedi Wishlist</a>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="section">
+            <h2>📅 Timeline - Presenza sul Web</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>2010 - Gli Inizi</h3>
+                    <p>Capobastone inizia la sua avventura su YouTube con contenuti satirici e griefing</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2015 - Crescita</h3>
+                    <p>Il canale raggiunge le prime decine di migliaia di iscritti con contenuti sempre più elaborati</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2018 - Espansione Twitch</h3>
+                    <p>Apertura del canale Twitch "CapobastoneOfficial" con live serali alle 21:05</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2020 - Social Media</h3>
+                    <p>Espansione su Instagram (@capobastonecobra) e Facebook con migliaia di follower</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2022 - Rise of Kingdom</h3>
+                    <p>Capobastone diventa un punto di riferimento per la community italiana di Rise of Kingdom</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2024 - Oggi</h3>
+                    <p>Oltre 336.000 iscritti su YouTube e una community affiatata su Telegram e altri social</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Links -->
+        <section class="section">
+            <h2>🔗 Seguilo sui Social</h2>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@TheCapoBastoneOfficialChannel" target="_blank" class="btn">📺 YouTube</a>
+                <a href="https://www.instagram.com/capobastonecobra/" target="_blank" class="btn">📸 Instagram</a>
+                <a href="https://www.facebook.com/TheCapoBastoneOfficialPage" target="_blank" class="btn">👥 Facebook</a>
+                <a href="https://t.me/Capobastonetwitch" target="_blank" class="btn">✈️ Telegram</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>🎮 Fan Site non ufficiale - Creato con ❤️ per la community di Capobastone 🎮</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Tutti i marchi e i diritti appartengono ai rispettivi proprietari</p>
+        </footer>
+    </div>
+</body>
+</html>
